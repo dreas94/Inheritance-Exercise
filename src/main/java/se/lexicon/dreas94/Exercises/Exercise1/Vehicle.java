@@ -1,6 +1,6 @@
 package se.lexicon.dreas94.Exercises.Exercise1;
 
-public class Vehicle
+public abstract class Vehicle
 {
     private int vehicleId;
     String registrationNumber;
@@ -59,4 +59,6 @@ public class Vehicle
                 ", brand='" + brand + '\'' +
                 '}';
     }
+
+    public abstract void drive();
 }
