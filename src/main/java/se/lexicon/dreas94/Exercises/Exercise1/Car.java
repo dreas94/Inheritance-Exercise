@@ -47,4 +47,9 @@ public class Car extends Vehicle
                 ", numberOfPassengers=" + numberOfPassengers +
                 '}';
     }
+
+    public void drive()
+    {
+        System.out.println("Car is driving, it has " + numberOfDoors + " doors and can handle " + numberOfPassengers + "passengers.");
+    }
 }
