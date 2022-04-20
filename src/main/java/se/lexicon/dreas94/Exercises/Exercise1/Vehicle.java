@@ -5,6 +5,20 @@ public class Vehicle
     private int vehicleId;
     String registrationNumber;
     String brand;
+    private static int sequencer = 0;
+
+    Vehicle()
+    {
+        setVehicleId(sequencer++);
+        setRegistrationNumber("");
+        setBrand("");
+    }
+
+    Vehicle(String registrationNumber, String brand)
+    {
+        setRegistrationNumber(registrationNumber);
+        setBrand(brand);
+    }
 
     public int getVehicleId()
     {
