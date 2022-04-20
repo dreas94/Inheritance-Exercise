@@ -4,6 +4,18 @@ public class Motorcycle extends Vehicle
 {
     String motorCycleType;
 
+    public Motorcycle()
+    {
+        super();
+        setMotorCycleType("");
+    }
+
+    public Motorcycle(String registrationNumber, String brand, String motorCycleType)
+    {
+        super(registrationNumber, brand);
+        setMotorCycleType(motorCycleType);
+    }
+
     public String getMotorCycleType()
     {
         return motorCycleType;

@@ -5,18 +5,18 @@ public class Truck extends Vehicle
     private int maxSpeed;
     private int maxWeight;
 
-    Truck()
+    public Truck()
     {
         super();
         setMaxSpeed(0);
         setMaxWeight(0);
     }
 
-    Truck(String registrationNumber, String brand, int numberOfDoors, int numberOfPassengers)
+    public Truck(String registrationNumber, String brand, int maxSpeed, int maxWeight)
     {
         super(registrationNumber, brand);
-        setMaxSpeed(numberOfDoors);
-        setMaxWeight(numberOfPassengers);
+        setMaxSpeed(maxSpeed);
+        setMaxWeight(maxWeight);
     }
 
     public int getMaxSpeed()
@@ -49,6 +49,6 @@ public class Truck extends Vehicle
 
     public void drive()
     {
-        System.out.println("Car is driving, it has " + maxSpeed + " Max Speed and can handle" + maxWeight + "kg.");
+        System.out.println("Car is driving, it has " + maxSpeed + " Max Speed and can handle " + maxWeight + "kg.");
     }
 }

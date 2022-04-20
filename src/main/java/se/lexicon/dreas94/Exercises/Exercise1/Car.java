@@ -5,14 +5,14 @@ public class Car extends Vehicle
     private int numberOfDoors;
     private int numberOfPassengers;
 
-    Car()
+    public Car()
     {
         super();
         setNumberOfDoors(0);
         setNumberOfPassengers(0);
     }
 
-    Car(String registrationNumber, String brand, int numberOfDoors, int numberOfPassengers)
+    public Car(String registrationNumber, String brand, int numberOfDoors, int numberOfPassengers)
     {
         super(registrationNumber, brand);
         setNumberOfDoors(numberOfDoors);
@@ -50,6 +50,6 @@ public class Car extends Vehicle
 
     public void drive()
     {
-        System.out.println("Car is driving, it has " + numberOfDoors + " doors and can handle " + numberOfPassengers + "passengers.");
+        System.out.println("Car is driving, it has " + numberOfDoors + " doors and can handle " + numberOfPassengers + " passengers.");
     }
 }
