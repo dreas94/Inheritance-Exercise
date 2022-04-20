@@ -1,6 +1,7 @@
 package se.lexicon.dreas94;
 
 import se.lexicon.dreas94.Exercises.Exercise1.*;
+import se.lexicon.dreas94.Exercises.Exercise2.*;
 
 
 public class App 
