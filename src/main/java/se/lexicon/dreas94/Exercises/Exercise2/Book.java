@@ -19,9 +19,12 @@ public class Book
         setPages(100);
     }
 
-    public Book(int pages)
+    public Book(String title, String author, int years, int pages)
     {
         setPages(pages);
+        setTitle(title);
+        setAuthor(author);
+        setYears(years);
     }
 
     public String getTitle()
@@ -72,5 +75,17 @@ public class Book
     public void setPages(int pages)
     {
         this.pages = pages;
+    }
+
+    @Override
+    public String toString()
+    {
+        return "Book{" +
+                "title='" + title + '\'' +
+                ", author='" + author + '\'' +
+                ", category=" + category +
+                ", years=" + years +
+                ", pages=" + pages +
+                '}';
     }
 }

@@ -7,4 +7,9 @@ public class ReferenceBook extends Book
         super();
         super.setCategory(Category.NOT_LOANABLE);
     }
+
+    public ReferenceBook(String title, String author, int years, int pages)
+    {
+        super(title, author, years, pages);
+    }
 }
